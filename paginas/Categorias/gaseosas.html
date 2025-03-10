@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../img/heart-shaped.png">
+    <meta name="description" content="Frituras... Productos de frituras al por mayor y menor"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="../../estilos/ProductoStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;700&display=swap" rel="stylesheet">
+
+    <title>Gaseosas Y Aguas</title>
+</head>
+
+<body>
+    
+    <header>
+        <div class="logo-nav">
+            <a href="../../index.html"><img src="../../img/Logo.png" alt=""></a>
+
+        </div>
+
+        <div class="search-container">
+            <input type="text" id="search" placeholder="Buscar...">
+            <button>🔍</button>
+        </div>
+
+        <nav id="menu">
+            <ul>
+                <li><a href="../../paginas/Categorias/compra.html">SU CARRITO</a></li>
+                <li><a href="../../index.html#grid">Categorias</a></li>
+                <li><a href="../ContactoPersonal.html">Contacto</a></li>
+                <li><a href="../../index.html">Inicio</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <button class="carrito-btn" onclick="toggleCarrito()">
+            <i class="fas fa-shopping-cart"></i>
+        </button>
+    </header>
+
+    <main class="container content-section">    
+
+        <h1 class="titulo">Gaseosas</h1>
+  
+        <div class="shop-items" id="lista-productos">
+                
+                <div class="card shop-item item">
+                        <h4 class="">Inca Kola</h4>
+                        <img src="../../img/categorias/gaseosas/inca 600.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="600">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Coca Cola</h4>
+                        <img src="../../img/categorias/gaseosas/coca 600.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="602">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Inca Kola 1.5</h4>
+                        <img src="../../img/categorias/gaseosas/inca 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">37.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="603">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">                    
+                        <h4 class="">Coca Cola 1.5</h4>
+                        <img src="../../img/categorias/gaseosas/coca 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">37.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="604">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Inca Kola 3L</h4>
+                        <img src="../../img/categorias/gaseosas/inca 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">40.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="605">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Coca Cola 3L</h4>
+                        <img src="../../img/categorias/gaseosas/coca 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">40.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="606">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Fanta *</h4>
+                        <img src="../../img/categorias/gaseosas/fanta 500.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">23.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="607">+</a>
+                    </div>
+                </div>
+            
+                <div class="card shop-item item">
+                        <h4 class="">fanta 3L*</h4>
+                        <img src="../../img/categorias/gaseosas/fanta 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">35.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="608">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Sprite</h4>
+                        <img src="../../img/categorias/gaseosas/sprite 500.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">23.5.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="609">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Sprite 3L</h4>
+                        <img src="../../img/categorias/gaseosas/sprite 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">35.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="610">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pepsi bb</h4>
+                        <img src="../../img/categorias/gaseosas/pepsi 300.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="611">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pepsi 450</h4>
+                        <img src="../../img/categorias/gaseosas/pepsi 450.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">23.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="612">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pepsi Jumbo</h4>
+                        <img src="../../img/categorias/gaseosas/pepsi jumbo.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">25.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="613">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pepsi 1.5</h4>
+                        <img src="../../img/categorias/gaseosas/pepsi 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">20.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="614">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pepsi 2L</h4>
+                        <img src="../../img/categorias/gaseosas/pepsi 2L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">25.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="615">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pepsi 3L</h4>
+                        <img src="../../img/categorias/gaseosas/pepsi 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.00</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="616">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Concordia bb *</h4>
+                        <img src="../../img/categorias/gaseosas/concordia 300.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="617">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Concordia *</h4>
+                        <img src="../../img/categorias/gaseosas/concordia 500.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">23.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="618">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Concordia 3L</h4>
+                        <img src="../../img/categorias/gaseosas/concordia 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="619">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Cielo 600</h4>
+                        <img src="../../img/categorias/gaseosas/cielo 600ml.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">12.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="620">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Cielo 1L</h4>
+                        <img src="../../img/categorias/gaseosas/cielo 1L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">12.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="621">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Cielo 2.5L</h4>
+                        <img src="../../img/categorias/gaseosas/cielo 2.5l.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">15.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="622">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Luis</h4>
+                        <img src="../../img/categorias/gaseosas/auga san luis.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="623">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Luis</h4>
+                        <img src="../../img/categorias/gaseosas/auga san luis.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="624">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Luis S*</h4>
+                        <img src="../../img/categorias/gaseosas/san luis sabores.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">23.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="625">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Big Cola 400ml</h4>
+                        <img src="../../img/categorias/gaseosas/big cola 400ml.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="626">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Kr 400ml*</h4>
+                        <img src="../../img/categorias/gaseosas/kr 400ml.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="627">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                         <h4 class="">Big Cola 1.5L</h4>
+                         <img src="../../img/categorias/gaseosas/big cola 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="628">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Kr 1.5L*</h4>
+                        <img src="../../img/categorias/gaseosas/kr 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="629">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Big Cola 3L</h4>
+                        <img src="../../img/categorias/gaseosas/big cola 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="630">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">RK 3L*</h4>
+                        <img src="../../img/categorias/gaseosas/kr 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="631">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Volt*</h4>
+                        <img src="../../img/categorias/gaseosas/volt.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">21.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="632">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Sporade*</h4>
+                        <img src="../../img/categorias/gaseosas/sporade.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">21.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="633">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Sporade 1.5L</h4>
+                        <img src="../../img/categorias/gaseosas/sporade 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">21.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="634">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Cifrut G</h4>
+                        <img src="../../img/categorias/gaseosas/cifrut g.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="635">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Cifrut N</h4>
+                        <img src="../../img/categorias/gaseosas/cifrut n.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="636">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Frugos</h4>
+                        <img src="../../img/categorias/gaseosas/frugos durazno botella.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">24.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="637">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Frugos Sixpack</h4>
+                        <img src="../../img/categorias/gaseosas/frugos valle caja sixpack.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">9.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="638">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Frugos 1L</h4>
+                        <img src="../../img/categorias/gaseosas/frugos valle caja 1L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">42.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="639">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Frugos 1.5L</h4>
+                        <img src="../../img/categorias/gaseosas/frugos valle caja 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">42.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="640">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Fresh</h4>
+                        <img src="../../img/categorias/gaseosas/frugos fresh 450.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">17.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="641">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Fresh 1.5L</h4>
+                        <img src="../../img/categorias/gaseosas/frugos fresh 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="642">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pulpin</h4>
+                        <img src="../../img/categorias/gaseosas/pulpin.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">15.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="643">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Pulp</h4>
+                        <img src="../../img/categorias/gaseosas/pulp sixpack.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">9.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="644">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Gatorade</h4>
+                        <img src="../../img/categorias/gaseosas/gatorade.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">21.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="645">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Guaranita</h4>
+                        <img src="../../img/categorias/gaseosas/guaranita.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="646">+</a>
+                    </div>
+                </div>
+                
+                <div class="card shop-item item">
+                        <h4 class="">Guarana 450ml</h4>
+                        <img src="../../img/categorias/gaseosas/guarana 450.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">23.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="647">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Guarana 2L</h4>
+                        <img src="../../img/categorias/gaseosas/guarana 2L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">28.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="648">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Guarana 3L</h4>
+                        <img src="../../img/categorias/gaseosas/guarana 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="649">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Oro 400ml</h4>
+                        <img src="../../img/categorias/gaseosas/oro 400ml.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">13.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="650">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Oro 1.5L</h4>
+                        <img src="../../img/categorias/gaseosas/oro 1.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="651">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">Oro 3L</h4>
+                        <img src="../../img/categorias/gaseosas/oro 3L.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">30.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="652">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Carlos</h4>
+                        <img src="../../img/categorias/gaseosas/san carlos 500.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">11.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="653">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Mateo</h4>
+                        <img src="../../img/categorias/gaseosas/san mateo.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">18.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="654">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Mateo C/g</h4>
+                        <img src="../../img/categorias/gaseosas/san mateo con gas.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">20.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="655">+</a>
+                    </div>
+                </div>
+
+                <div class="card shop-item item">
+                        <h4 class="">San Mateo 2.5L</h4>
+                        <img src="../../img/categorias/gaseosas/san mateo 2.5.png" class="shop-item-image">
+                    <div class="shop-item-details">
+                        <p class="shop-item-price precio">S/. <span class="">20.50</span></p>
+                        <a href="" class="btn btn-primary agregar-carrito" data-id="656">+</a>
+                    </div>
+                </div>
+
+
+
+        </div>
+    </main>
+    
+    <section class="container content-section container-carrito" id="container-carrito">    
+        <p class="section-header" class="carrito-btn" onclick="toggleCarrito()">Productos Seleccionados</p>
+            <div class="collapse navbar-collapse shop-items" id="navbarCollapse">
+                <ul class="navbar-nav mr-auto">
+                        <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+                            <table id="lista-carrito" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Precio</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>  
+                    
+                    <a href="#" id="vaciar-carrito" class="btn btn-primary">Vaciar Carrito</a>
+                    <a href="#" id="procesar-pedido" class="btn btn-primary">Procesar Compra</a>
+                </ul>
+            </div>
+    </section>
+
+    <script src="../../javascript/main.js"></script>
+    <script src="../../javascript/carrito.js"></script>
+    <script src="../../javascript/pedido.js"></script>
+
+</body>
+
+</html>
